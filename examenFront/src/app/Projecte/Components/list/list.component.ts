@@ -11,7 +11,7 @@ export class ListComponent implements OnInit {
   imatges!: Array<any>
   error!: string;
   data!: Array<any>;
-
+  a = "hola";
 
   constructor(private httpClient: listApi) {
   }
@@ -27,10 +27,10 @@ export class ListComponent implements OnInit {
         })
       ).subscribe({
         next: (x) => {
+          console.log(x);
           this.imatges = x;
-          console.log(this.imatges);
+          console.log(this.imatges[0].data[0].artist_id);
           this.data = this.imatges;
-          console.log(this.data);
         },
         error: (err: any) => {
           console.log(err.message)

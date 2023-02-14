@@ -9,6 +9,7 @@ import { Observable } from "rxjs";
 export class listApi {
     constructor(private http:HttpClient){}
     getImatges():Observable<any>{
+        console.log("getImatges");
         return this.http.post("https://api.artic.edu/api/v1/artworks","{}");
     }
 }

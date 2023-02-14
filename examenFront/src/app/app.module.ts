@@ -5,6 +5,8 @@ import { AppComponent } from './app.component';
 import { ListComponent } from './Projecte/Components/list/list.component';
 import { ProbaComponent } from './Projecte/Components/proba/proba.component';
 import { LlistaSuperiorComponent } from './Projecte/Components/llista-superior/llista-superior.component';
+import { HttpClientModule } from '@angular/common/http'; 
+
 
 @NgModule({
   declarations: [
@@ -15,7 +17,8 @@ import { LlistaSuperiorComponent } from './Projecte/Components/llista-superior/l
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
