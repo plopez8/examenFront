@@ -3,17 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ListComponent } from './Projecte/Components/list/list.component';
-import { ProbaComponent } from './Projecte/Components/proba/proba.component';
-import { LlistaSuperiorComponent } from './Projecte/Components/llista-superior/llista-superior.component';
 import { HttpClientModule } from '@angular/common/http'; 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ListComponent,
-    ProbaComponent,
-    LlistaSuperiorComponent
+    ListComponent
   ],
   imports: [
     BrowserModule,

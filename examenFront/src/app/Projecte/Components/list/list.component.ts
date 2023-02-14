@@ -29,7 +29,7 @@ export class ListComponent implements OnInit {
         next: (x) => {
           console.log(x);
           this.imatges = x;
-          console.log(this.imatges[0].data[0].artist_id);
+          console.log(this.imatges);
           this.data = this.imatges;
         },
         error: (err: any) => {
