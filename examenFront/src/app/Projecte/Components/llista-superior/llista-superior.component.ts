@@ -3,11 +3,11 @@ import { catchError, Subscription, take, throwError } from 'rxjs';
 import { listApi } from '../../Serveis/Api/list';
 
 @Component({
-  selector: 'app-list',
-  templateUrl: './list.component.html',
-  styleUrls: ['./list.component.css']
+  selector: 'app-llista-superior',
+  templateUrl: './llista-superior.component.html',
+  styleUrls: ['./llista-superior.component.css']
 })
-export class ListComponent implements OnInit {
+export class LlistaSuperiorComponent implements OnInit{
   imatges!: Array<any>
   error!: string;
   data!: Array<any>;
@@ -38,5 +38,4 @@ export class ListComponent implements OnInit {
         complete: () => {},
       })
   }
-
 }
